@@ -1,3 +1,10 @@
-const accordian = document.getElementByID('accordian');
+const questions = document.querySelectorAll('#accordian h3');
 
-console.log('accordian here ->', accordian);
+function expandDropdown(event){
+  event.target.nextElementSibling.classList.toggle('hidden');
+}
+
+questions.forEach(question => question.addEventListener(
+  'click',
+  expandDropdown
+));

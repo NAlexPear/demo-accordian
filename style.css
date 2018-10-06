@@ -1,0 +1,25 @@
+body {
+  color: #2d2d2d;
+}
+
+h3 {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+h3:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.dropdown {
+  transition: 0.5s max-height ease;
+}
+
+.dropdown:not(.hidden){
+  max-height: 100px;
+}
